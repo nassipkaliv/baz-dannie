@@ -1,0 +1,47 @@
+body, p, div, ul, li, span, button, a, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+}
+
+.layout {
+  background-color: #e7f6ff;
+  padding: 80px 55px;
+  min-height: calc(100vh + 1px);
+  box-sizing: border-box;
+
+  @media (max-width: 992px) {
+    padding: 60px 45px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 30px;
+  }
+
+  @media (max-width: 576px) {
+    padding: 30px 20px;
+  }
+}
+
+.main-content {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 40px;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    min-height: inherit;
+  }
+}
+
+img {
+  height: 300px;
+}
+
